@@ -28,12 +28,13 @@ mediaRouter.post("/", async (req, res, next) => {
     }
 })
 
-mediaRouter.put("/:mediaId/poster", multer({storage: cloudinaryStorage}).single("Poster") , async(req, res, next) => {
+mediaRouter.post("/:mediaId/poster", multer({storage: cloudinaryStorage}).single("Poster") , async(req, res, next) => {
     try {
         console.log(req.file)
         const media = await getMedia()
-        const indexMedia = media.findIndex((m) => m.imdbID === req.params.mediaId);
-        media[indexMedia].Poster = req.file.path
+        const index = media.findIndex((m) => m.imdbID === req.params.mediaId);
+        
+        media[index].Poster = req.file.path
         await writeMedia(media)
         res.status(200).send(media[indexMedia])
     } catch (error) {
