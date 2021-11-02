@@ -1,18 +1,1 @@
-[
-    {
-        "Title": "The Lord of the Rings: The Fellowship of the Ring",
-        "Year": "2001",
-        "Type": "movie",
-        "Poster": "https://m.media-amazon.com/images/M/MV5BMTM5MzcwOTg4MF5BMl5BanBnXkFtZTgwOTQwMzQxMDE@._V1_SX300.jpg",
-        "imbdID": "1xr2o7f0kvc755vi",
-        "reviews": []
-    },
-    {
-        "Title": "The Lord of the Rings: The Fellowship of the Ring",
-        "Year": "2020",
-        "Type": "movie",
-        "Poster": "https://m.media-amazon.com/images/M/MV5BMTM5MzcwOTg4MF5BMl5BanBnXkFtZTgwOTQwMzQxMDE@._V1_SX300.jpg",
-        "imbdID": "1xr2p9q0kvc7aqx4",
-        "reviews": []
-    }
-]
+[{"Title":"The Lord of the Rings: The Fellowship of the Ring","Year":"2001","Type":"movie","Poster":"https://m.media-amazon.com/images/M/MV5BMTM5MzcwOTg4MF5BMl5BanBnXkFtZTgwOTQwMzQxMDE@._V1_SX300.jpg","imbdID":"1xr2o7f0kvc755vi","reviews":[]},{"Poster":"https://res.cloudinary.com/adamb/image/upload/v1635519964/Media-Folder/xhzw8q3zj5u0vbklbyxv.jpg"}]

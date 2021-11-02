@@ -32,9 +32,8 @@ mediaRouter.post("/:mediaId/poster", multer({storage: cloudinaryStorage}).single
     try {
         console.log(req.file)
         const media = await getMedia()
-        const index = media.findIndex((m) => m.imdbID === req.params.mediaId);
-        
-        media[index].Poster = req.file.path
+        const indexMedia = media.findIndex((m) => m.imdbID === req.params.mediaId);
+        media[indexMedia].Poster = req.file.path
         await writeMedia(media)
         res.status(200).send(media[indexMedia])
     } catch (error) {
